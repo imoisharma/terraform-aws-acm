@@ -28,7 +28,7 @@ variable "key_algorithm" {
 }
 
 variable "certificate_transparency_logging_preference" {
-  type = bool
+  type        = bool
   description = "(Optional) Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details."
-  default = true
+  default     = true
 }
