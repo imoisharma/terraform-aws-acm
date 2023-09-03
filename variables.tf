@@ -32,3 +32,9 @@ variable "certificate_transparency_logging_preference" {
   description = "(Optional) Whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED. See https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency for more details."
   default     = true
 }
+
+variable "validation_option" {
+  type = any
+  description = "Supported nested arguments for the validation_option configuration block: domain_name - (Required) Fully qualified domain name (FQDN) in the certificate. validation_domain - (Required) Domain name that you want ACM to use to send you validation emails. This domain name is the suffix of the email addresses that you want ACM to use. This must be the same as the domain_name value or a superdomain of the domain_name value. For example, if you request a certificate for testing.example.com, you can specify example.com for this value."
+  default = {}
+}
