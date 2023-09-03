@@ -16,8 +16,8 @@ variable "validation_method" {
 }
 
 variable "key_algorithm" {
-  type = string
+  type        = string
   description = "(Optional) Specifies the algorithm of the public and private key pair that your Amazon issued certificate uses to encrypt data."
-  default = null
+  default     = null
 }
 
